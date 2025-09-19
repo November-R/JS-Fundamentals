@@ -7,7 +7,7 @@ if (isNaN(userArgument1)) {
     let i = 0;
 
     while (i < userArgument1) {
-        console.log("x".repeat(userArgument1));
+        console.log("X".repeat(userArgument1));
         i ++;
     }
 }
