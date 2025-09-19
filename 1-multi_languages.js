@@ -5,4 +5,6 @@ let pyLanguage = "Python is cool";
 let jsLanguage = "JavaScript is amazing!";
 
 //printing the variables to the console
-console.log(cLanguage, pyLanguage, jsLanguage);
+console.log(cLanguage);
+console.log(pyLanguage);
+console.log(jsLanguage);
