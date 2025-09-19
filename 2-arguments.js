@@ -1,18 +1,21 @@
-const ps = require("prompt-sync");
-const prompt = ps();
+ let userArgument1 = process.argv[2];
+ let userArgument2 = process.argv[3];
+ let userArgument3 = process.argv[4];
 
-let userArgument1 = prompt("Enter your name: ");
-let userArgument2 = prompt("Enter your age: ");
-let userArgument3 = prompt("Enter your favorite movie: ");
-
-if(userArgument1 == "" && userArgument2 == "" && userArgument3 == "") {
+ if (userArgument1 == undefined && userArgument2 == undefined && userArgument3 == undefined) {
     console.log("No argument");
-} else if(userArgument1 != "" && userArgument2 == "" && userArgument3 == "") {
+
+ } else if (userArgument1 != undefined && userArgument2 == undefined && userArgument3 == undefined) {
     console.log("Argument found");
-} else if(userArgument1 == "" && userArgument2 != "" && userArgument3 == "") {
+ }
+
+ else if (userArgument1 == undefined && userArgument2 != undefined && userArgument3 == undefined) {
     console.log("Argument found");
-} else if(userArgument1 == "" && userArgument2 == "" && userArgument3 != "") {
+ }
+
+ else if (userArgument1 == undefined && userArgument2 == undefined && userArgument3 != undefined) {
     console.log("Argument found");
-} else if(userArgument1 != "" || userArgument2 != "" || userArgument3 != "") {
+ 
+ } else if (userArgument1 != undefined || userArgument2 == undefined || userArgument3 == undefined) {
     console.log("Arguments found");
-}
+ }
