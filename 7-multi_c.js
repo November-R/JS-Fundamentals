@@ -7,7 +7,7 @@ if (userArgument == undefined || isNaN(userArgument)) {
     let i = 0;
 
     while (i < parseInt(userArgument)) {
-        console.log("C is fun!");
+        console.log("C is fun");
 
         i++;
     }
